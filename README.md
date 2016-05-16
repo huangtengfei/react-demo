@@ -18,7 +18,8 @@ npm run dev
 
 这个例子是参考 [React 官方示例][2] 实现的一个简单的评论框组件，主要分成以下几次提交：
 
-- 搭了组件的架子，使用了属性，引入了 markdown 
+- 搭了组件的架子，使用了 props，引入了 markdown 
+- 从服务器获取数据，使用了 state
 
   [1]: https://github.com/huangtengfei/blog/issues/17
   [2]: https://facebook.github.io/react/docs/tutorial.html
