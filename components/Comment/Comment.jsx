@@ -3,6 +3,11 @@ import marked from 'marked';
 
 class Comment extends React.Component {
 
+	constructor() {
+		super();
+		this.rawMarkup = this.rawMarkup.bind(this);
+	}
+
 	rawMarkup() {
 		let rawMarkup = marked(this.props.children.toString(), {sanitize: true});
 		return { __html: rawMarkup }
