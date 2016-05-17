@@ -35,10 +35,6 @@ node server
 
 另外，由于使用了 [Fetch API][3]进行数据请求，所以需要浏览器为 Chrome42+ 、Firefox39+ 或 Opera 29+ 。当然，你也可以使用 [Fetch ployfill][4] 或用 AJAX 。
 
-最后的效果是这样的：
-
-![image](http://aligitlab.oss-cn-hangzhou-zmf.aliyuncs.com/uploads/aebuyer-project/fast-issue/68fce8b67e651d88fc3bb7eab88ecccf/image.png)
-
 ## 几点注意
 
 ### super() 和 super(props) 的区别
