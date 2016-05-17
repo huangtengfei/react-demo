@@ -15,11 +15,17 @@ class Comment extends React.Component {
 
 	render() {
 		return (
-			<div className="comment-body">
-				<h2 className="author">
-					{this.props.author}
-				</h2>
-				<span dangerouslySetInnerHTML={this.rawMarkup()} />
+			<div className="comment-wrapper">
+				<a>
+					<img src="https://avatars0.githubusercontent.com/u/3126745?v=3&s=96" />
+				</a>
+				<div className="comment">
+					<div className="comment-header">
+						<span className="comment-author">{this.props.author}</span>
+						<span className="comment-time">{this.props.time}</span>
+					</div>
+					<div className="comment-content" dangerouslySetInnerHTML={this.rawMarkup()} />
+				</div>				
 			</div>
 		) 
 	}

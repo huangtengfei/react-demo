@@ -5,8 +5,9 @@ class CommentList extends React.Component {
 
 	render() {
 		let commentNodes = this.props.data.map((comment, i) => {
-			return (
-				<Comment author={comment.author} key={i}>
+			let createTime = new Date(comment.id).toLocaleTimeString();
+			return (				
+				<Comment author={comment.author} time={createTime} key={i}>
 					{comment.text}
 				</Comment>
 			)

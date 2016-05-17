@@ -25,9 +25,16 @@ class CommentForm extends React.Component {
 	render() {
 		return (
 			<form className="comment-form" onSubmit={this.handleSubmit}>
-				<input type="text" placeholder="your name" ref="author" />
-				<input type="text" placeholder="say something" ref="text" />
-				<input type="submit" value="post" />
+				<a>
+					<img src="https://avatars0.githubusercontent.com/u/3126745?v=3&s=96" />
+				</a>				
+				<div className="comment-text">
+					<textarea rows="5" placeholder="say something" ref="text"></textarea>
+				</div>				
+				<div className="comment-footer">
+					<input type="text" placeholder="your name" ref="author" />
+					<input type="submit" value="post" />
+				</div>
 			</form>
 		)
 	}
