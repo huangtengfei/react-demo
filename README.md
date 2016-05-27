@@ -55,6 +55,8 @@ render() {
 
 在遇到 `{` 开头的代码块时，会以 JavaScript 规则解析，在遇到 `<` 开头的 HTML 标签时，以 HTML 语法解析。
 
+在设置样式时需要注意，不能写成 `style={color: this.state.color}`，而要写成 `style={{color: this.state.color}}` 因为样式是一个对象，第一层大括号表示这是 JavaScript 语法，第二层大括号表示样式对象。
+
 #### 注释
 
 使用 JavaScript 注释风格，但在一个组件的子元素位置使用注释要用 `{}` 包起来。例如：
